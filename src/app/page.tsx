@@ -52,7 +52,6 @@ export default function Home() {
                             <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>487</h1>
                             <h3 className="text-2xl leading-tight font-semibold">Tələbə</h3>
                         </div>
-                        {/* <div className="flex flex-col items-center justify-center w-full h-full p-5 rounded-xl bg-no-repeat bg-center bg-blend-screen" style={{ backgroundColor: "var(--bg-3)", backgroundImage: "url(/sabah.svg)" }}> */}
                         <div className="flex flex-col relative items-center justify-center w-full h-full p-5 rounded-xl overflow-hidden" style={{ backgroundColor: "var(--bg-3)" }}>
                             <div className='flex absolute opacity-40'>
                                 <img src="/sabah.svg" className="h-44" alt="" />

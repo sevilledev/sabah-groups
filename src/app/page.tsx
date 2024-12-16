@@ -5,7 +5,7 @@ import students from './students.json'
 
 export default function Home() {
     return (
-        <main className="flex flex-col w-full items-center justify-center gap-8 row-start-2 sm:items-start">
+        <main className="flex flex-col w-full items-center justify-center pb-40 gap-8 row-start-2 sm:items-start">
 
             <div className="flex flex-col w-full h-screen justify-between py-12">
 
@@ -23,7 +23,7 @@ export default function Home() {
                 <section className="flex flex-col items-center w-full">
                     <div className="flex flex-col w-fit text-center">
                         <h2 className="text-xl font-bold tracking-widest" style={{ color: "#3c3c4399" }}>BAKI DÖVLƏT UNİVERSİTETİ</h2>
-                        <h2 className="text-6xl font-semibold mt-2 mb-5" style={{ backgroundImage: "linear-gradient(45deg, #0083bf 0%, #009b4d 100%)", color: "transparent", backgroundClip: "text" }}>SABAH Qrupları</h2>
+                        <h2 className="text-6xl font-semibold mt-2 mb-5" style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>SABAH Qrupları</h2>
                         <h2 className="font-medium" style={{ fontSize: 40, color: "#3c3c4399" }}>Kompüter Elmləri</h2>
                     </div>
                 </section>
@@ -35,49 +35,55 @@ export default function Home() {
             </div>
 
 
-            <section className="flex flex-col w-full items-center">
-                <div className="flex gap-5">
-                    <div className="flex flex-col gap-5">
-                        <div className="flex items-center justify-center rounded-xl w-32 h-32 bg-green-400 text-center">
-                            <h3 className="text-xl font-semibold">1 DAAD Təqaüdü Qalibi</h3>
+            <section className="flex flex-col items-center w-full mt-32">
+                <div className="flex w-2/3 gap-5" style={{ height: "30vw" }}>
+                    <div className="flex flex-col w-full h-full gap-5">
+                        <div className="flex flex-col items-center justify-center w-full h-full p-5 rounded-xl text-center" style={{ backgroundColor: "var(--bg-3)" }}>
+                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>1</h1>
+                            <h3 className="text-xl leading-tight font-semibold">DAAD Təqaüdü Qalibi</h3>
                         </div>
-                        <div className="flex items-center justify-center rounded-xl w-32 h-32 bg-green-400 text-center">
-                            <h3 className="text-xl font-semibold">1 Əlaçı Təqaüdü Qalibi</h3>
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-center gap-5">
-                        <div className="flex items-center justify-center rounded-xl w-48 h-24 bg-green-400">
-                            <h3 className="text-2xl font-semibold">384 Tələbə</h3>
-                        </div>
-                        <div className="flex items-center justify-center rounded-xl w-32 h-16 bg-blue-300">
-                            <h3 className="text-xl font-semibold">SABAH</h3>
-                        </div>
-                        <div className="flex items-center justify-center rounded-xl w-48 h-24 bg-green-400">
-                            <h3 className="text-2xl font-semibold">211 Məzun</h3>
+                        <div className="flex flex-col items-center justify-center w-full h-full p-5 rounded-xl text-center" style={{ backgroundColor: "var(--bg-3)" }}>
+                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>1</h1>
+                            <h3 className="text-xl leading-tight font-semibold">Əlaçı Təqaüdü Qalibi</h3>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-5">
-                        <div className="flex items-center justify-center rounded-xl w-32 h-32 bg-green-400 text-center">
-                            <h3 className="text-xl font-semibold">47 Fərqlənmə ilə bitirən məzun</h3>
+                    <div className="flex flex-col w-full h-full items-center gap-5">
+                        <div className="flex flex-col items-center justify-center w-full p-5 h-full rounded-xl" style={{ backgroundColor: "var(--bg-3)" }}>
+                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>384</h1>
+                            <h3 className="text-2xl leading-tight font-semibold">Tələbə</h3>
                         </div>
-                        <div className="flex items-center justify-center rounded-xl w-32 h-32 bg-green-400 text-center">
-                            <h3 className="text-xl font-semibold">648 bal ən yüksək qəbul balı</h3>
+                        <div className="flex items-center justify-center w-full h-full p-5 rounded-xl" style={{ backgroundColor: "var(--bg-3)" }}>
+                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>SABAH</h1>
+                        </div>
+                        <div className="flex flex-col items-center justify-center w-full h-full p-5 rounded-xl" style={{ backgroundColor: "var(--bg-3)" }}>
+                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>211</h1>
+                            <h3 className="text-2xl leading-tight font-semibold">Məzun</h3>
+                        </div>
+                    </div>
+                    <div className="flex flex-col w-full h-full gap-5">
+                        <div className="flex flex-col items-center justify-center w-full h-full p-5 rounded-xl text-center" style={{ backgroundColor: "var(--bg-3)" }}>
+                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>47</h1>
+                            <h3 className="text-xl leading-tight font-semibold">Fərqlənmə ilə bitirən məzun</h3>
+                        </div>
+                        <div className="flex flex-col items-center justify-center w-full h-full p-5 rounded-xl text-center" style={{ backgroundColor: "var(--bg-3)" }}>
+                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>648</h1>
+                            <h3 className="text-xl leading-tight font-semibold">Ən yüksək qəbul balı</h3>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="flex flex-col w-full items-center">
-                <div className="mt-20 p-5 gap-5" style={{ display: "grid", width: 1000, gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
+            <section className="flex flex-col w-full items-center mt-32">
+                <div className="mt-20 gap-10" style={{ display: "grid", width: 1000, gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
                     {students.map((s, index) => {
                         return (
-                            <div className="flex flex-col w-72 h-256 rounded-xl bg-gray-100 overflow-hidden" key={index}>
+                            <div className="flex flex-col h-256 rounded-xl overflow-hidden" style={{ backgroundColor: "var(--bg-3)" }} key={index}>
                                 <div className="">
-                                    <img src={`/students/${s.id}.jpg`} alt="" />
+                                    <img src={`/students/${s.id}.jpg`} className="aspect-square object-cover" alt="" />
                                 </div>
                                 <div className="flex flex-col p-5">
-                                    <h2 className="text-lg">{s.name}</h2>
-                                    <h4>{s.title}</h4>
+                                    <h2 className="text-lg font-semibold">{s.name}</h2>
+                                    <h4 className="leading-snug mt-1" style={{ color: "var(--text-2)" }} >{s.title}</h4>
                                 </div>
                             </div>
                         )
@@ -85,17 +91,17 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="flex flex-col w-full items-center">
-                <div className="mt-20 p-5 gap-5" style={{ display: "grid", width: 1000, gridTemplateColumns: "repeat(auto-fit, minmax(900px, 1fr))" }}>
+            <section className="flex flex-col w-full items-center mt-48">
+                <div className="flex flex-col gap-14" style={{ width: 1000 }}>
                     {teams.map((team, index) => {
                         return (
-                            <div className="flex w-216 h-256 gap-10 p-5 rounded-xl bg-gray-100 overflow-hidden" key={index}>
-                                <div className="flex flex-col">
-                                    <h4 className="text-xl">{team.title}</h4>
-                                    <h6 className="mt-5">{team.details}</h6>
+                            <div className="flex h-1/4 gap-10 p-5 rounded-xl" style={{ backgroundColor: "var(--bg-3)" }} key={index}>
+                                <div className="flex flex-col w-2/3">
+                                    <h4 className="text-2xl font-semibold">{team.title}</h4>
+                                    <h6 className="text-sm font-normal mt-4">{team.details}</h6>
                                 </div>
-                                <div className="flex flex-col gap-5">
-                                    {team.images.map((img, index) => <img src={`/teams/${img}`} alt="" key={index} />)}
+                                <div className="flex flex-col w-1/3 gap-5 h-96 overflow-y-scroll">
+                                    {team.images.map((img, index) => <img src={`/teams/${img}`} className="w-full rounded-md" alt="" key={index} />)}
                                 </div>
                             </div>
                         )

@@ -20,17 +20,9 @@ body {
 }
 
 @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @layer base {
@@ -60,6 +52,11 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --bg-1: #FFFFFF;
+    --bg-2: #E5E5EA;
+    --bg-3: #F2F2F7;
+    --text-2: #3C3C4399;
+    --gradient: linear-gradient(45deg, #0083bf 0%, #009b4d 100%);
   }
 
   .dark {
@@ -87,6 +84,10 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --bg-1: #000000;
+    --bg-2: #1C1C1E;
+    --bg-3: 240 3.8% 46.1%;
+    --gradient: linear-gradient(45deg, #0083bf 0%, #009b4d 100%);
   }
 }
 

@@ -49,14 +49,18 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col w-full h-full items-center gap-5">
                         <div className="flex flex-col items-center justify-center w-full p-5 h-full rounded-xl" style={{ backgroundColor: "var(--bg-3)" }}>
-                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>384</h1>
+                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>487</h1>
                             <h3 className="text-2xl leading-tight font-semibold">Tələbə</h3>
                         </div>
-                        <div className="flex items-center justify-center w-full h-full p-5 rounded-xl" style={{ backgroundColor: "var(--bg-3)" }}>
-                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>SABAH</h1>
+                        {/* <div className="flex flex-col items-center justify-center w-full h-full p-5 rounded-xl bg-no-repeat bg-center bg-blend-screen" style={{ backgroundColor: "var(--bg-3)", backgroundImage: "url(/sabah.svg)" }}> */}
+                        <div className="flex flex-col relative items-center justify-center w-full h-full p-5 rounded-xl overflow-hidden" style={{ backgroundColor: "var(--bg-3)" }}>
+                            <div className='flex absolute opacity-40'>
+                                <img src="/sabah.svg" className="h-44" alt="" />
+                            </div>
+                            <h1 className='font-semibold text-7xl z-10' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>SABAH</h1>
                         </div>
                         <div className="flex flex-col items-center justify-center w-full h-full p-5 rounded-xl" style={{ backgroundColor: "var(--bg-3)" }}>
-                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>211</h1>
+                            <h1 className='font-semibold text-7xl' style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>239</h1>
                             <h3 className="text-2xl leading-tight font-semibold">Məzun</h3>
                         </div>
                     </div>
@@ -77,13 +81,16 @@ export default function Home() {
                 <div className="mt-20 gap-10" style={{ display: "grid", width: 1000, gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
                     {students.map((s, index) => {
                         return (
-                            <div className="flex flex-col h-256 rounded-xl overflow-hidden" style={{ backgroundColor: "var(--bg-3)" }} key={index}>
+                            <div className="group flex flex-col relative h-256 rounded-xl overflow-hidden transition-all cursor-pointer" style={{ backgroundColor: "var(--bg-3)" }} key={index}>
                                 <div className="">
                                     <img src={`/students/${s.id}.jpg`} className="aspect-square object-cover" alt="" />
                                 </div>
                                 <div className="flex flex-col p-5">
                                     <h2 className="text-lg font-semibold">{s.name}</h2>
                                     <h4 className="leading-snug mt-1" style={{ color: "var(--text-2)" }} >{s.title}</h4>
+                                </div>
+                                <div className='opacity-0 group-hover:opacity-100 flex absolute w-full h-full p-5 transition-all' style={{ backgroundColor: "var(--mt-3)", backdropFilter: "saturate(180%) blur(20px)" }}>
+                                    <p className='text-xs whitespace-pre-wrap'>{s.details}</p>
                                 </div>
                             </div>
                         )
@@ -98,7 +105,7 @@ export default function Home() {
                             <div className="flex h-1/4 gap-10 p-5 rounded-xl" style={{ backgroundColor: "var(--bg-3)" }} key={index}>
                                 <div className="flex flex-col w-2/3">
                                     <h4 className="text-2xl font-semibold">{team.title}</h4>
-                                    <h6 className="text-sm font-normal mt-4">{team.details}</h6>
+                                    <h6 className="text-sm font-normal mt-4 whitespace-pre-wrap">{team.details}</h6>
                                 </div>
                                 <div className="flex flex-col w-1/3 gap-5 h-96 overflow-y-scroll">
                                     {team.images.map((img, index) => <img src={`/teams/${img}`} className="w-full rounded-md" alt="" key={index} />)}

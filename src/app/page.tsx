@@ -22,7 +22,7 @@ export default function Home() {
 
                 <section className="flex flex-col items-center w-full">
                     <div className="flex flex-col w-fit text-center">
-                        <h2 className="text-xl font-bold tracking-widest" style={{ color: "#3c3c4399" }}>BAKI DÖVLƏT UNİVERSİTETİ</h2>
+                        <h2 className="text-4xl font-bold tracking-widest" style={{ color: "#3c3c4399" }}>BAKI DÖVLƏT UNİVERSİTETİ</h2>
                         <h2 className="text-6xl font-semibold mt-2 mb-5" style={{ backgroundImage: "var(--gradient)", color: "transparent", backgroundClip: "text" }}>SABAH Qrupları</h2>
                         <h2 className="font-medium" style={{ fontSize: 40, color: "#3c3c4399" }}>Kompüter Elmləri</h2>
                     </div>
